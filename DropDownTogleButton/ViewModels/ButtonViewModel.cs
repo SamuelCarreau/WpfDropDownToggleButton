@@ -6,22 +6,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows.Media;
+using WpfTestingApp.Infrastucture.BindableBase;
 using WpfTestingApp.Infrastucture.DelegateCommand;
 
 namespace DropDownTogleButton.ViewModels
 {
-    public class ButtonViewModel : ViewModelBase
+    public class ButtonViewModel : BindableBase
     {
-        public List<CommandModel> Commands { get; private set; }
         private Brush _color;
+
+        public List<CommandModel> Commands { get; private set; }
         public Brush Color
         {
-            get => _color;
-            set
-            {
-                _color = value;
-                OnPropertyChanged();
-            }
+            get => GetProperty(ref _color);
+            set => SetProperty(ref _color, value);
         }
 
         public ButtonViewModel()
