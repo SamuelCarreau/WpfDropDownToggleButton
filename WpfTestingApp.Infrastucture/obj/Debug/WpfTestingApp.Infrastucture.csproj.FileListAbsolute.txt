@@ -1,0 +1,6 @@
+C:\Users\samuel\source\repos\WpfTestingApp\WpfTestingApp.Infrastucture\bin\Debug\WpfTestingApp.Infrastucture.dll
+C:\Users\samuel\source\repos\WpfTestingApp\WpfTestingApp.Infrastucture\bin\Debug\WpfTestingApp.Infrastucture.pdb
+C:\Users\samuel\source\repos\WpfTestingApp\WpfTestingApp.Infrastucture\obj\Debug\WpfTestingApp.Infrastucture.csprojAssemblyReference.cache
+C:\Users\samuel\source\repos\WpfTestingApp\WpfTestingApp.Infrastucture\obj\Debug\WpfTestingApp.Infrastucture.csproj.CoreCompileInputs.cache
+C:\Users\samuel\source\repos\WpfTestingApp\WpfTestingApp.Infrastucture\obj\Debug\WpfTestingApp.Infrastucture.dll
+C:\Users\samuel\source\repos\WpfTestingApp\WpfTestingApp.Infrastucture\obj\Debug\WpfTestingApp.Infrastucture.pdb
