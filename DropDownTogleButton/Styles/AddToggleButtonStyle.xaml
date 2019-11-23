@@ -1,0 +1,58 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="{x:Type ToggleButton}" x:Key="AddToggleButtonTemplate">
+        <Setter Property="ContentTemplate">
+            <Setter.Value>
+                <DataTemplate >
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg8" Width="100.0001" Height="100.0001">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="0"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+
+                            <Canvas Name="layer1">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="0" Y="-196.9999"/>
+                                </Canvas.RenderTransform>
+                                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3713" Fill="#FF7DC800" StrokeThickness="0.14644352">
+                                    <Path.Data>
+                                        <PathGeometry Figures="M 50.000048 196.9999 A 50 50 0 0 0 0 246.99995 50 50 0 0 0 50.000048 297 50 50 0 0 0 100.0001 246.99995 50 50 0 0 0 50.000048 196.9999 Z m 0 25.00054 c 2.77001 0 5.000212 2.26997 5.000212 5.09013 v 14.90969 h 14.909166 c 2.82016 0 5.09065 2.23021 5.09065 5.00021 0 2.77 -2.27049 4.99969 -5.09065 4.99969 H 55.00026 v 14.90969 c 0 2.82016 -2.230202 5.09064 -5.000212 5.09064 -2.770002 0 -5.000212 -2.27048 -5.000212 -5.09064 V 252.00016 H 30.090668 c -2.820154 0 -5.090644 -2.22969 -5.090644 -4.99969 0 -2.77 2.27049 -5.00021 5.090644 -5.00021 h 14.909168 v -14.90969 c 0 -2.82016 2.23021 -5.09013 5.000212 -5.09013 z" FillRule="NonZero"/>
+                                    </Path.Data>
+                                </Path>
+                            </Canvas>
+                        </Canvas>
+                    </Viewbox>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Grid x:Name="grid">
+                        <Border x:Name="border" CornerRadius="100" BorderBrush="Gray" BorderThickness="3">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.FontWeight="Bold">
+                            </ContentPresenter>
+                        </Border>
+                    </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="DarkGray"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderThickness" Value="6"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#FF33962B"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" TargetName="grid" Value="0.25"/>
+                            </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+
